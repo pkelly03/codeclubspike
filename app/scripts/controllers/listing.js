@@ -1,9 +1,7 @@
 'use strict';
 
-codeclubspikeApp.controller('ListDvdController', function($scope, myDummyAjaxProxy) {
+codeclubspikeApp.controller('ListDvdController', function($scope, dvdservice) {
   $scope.getDvds = function() {
-     myDummyAjaxProxy.getDvds();
+     return dvdservice.getDvds();
   }
 });
-
-ListDvdController.$inject = ['$scope', 'myDummyAjaxProxy'];
