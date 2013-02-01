@@ -1,0 +1,15 @@
+<table class="table table-striped">
+    <thead>
+        <th>Name</th>
+        <th>Director</th>
+        <th>Year</th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="dvd in getDvds()">
+        <td>{{dvd.name}}</td>
+        <td>{{dvd.director}}</td>
+        <td>{{dvd.year}}</td>
+    </tr>
+    </tbody>
+</table>
+<a href="#/new"><span class="badge">Add</span></a>
